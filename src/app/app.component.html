@@ -1,20 +1,78 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body>
+  <div class="header">
+    <h1>My Hometown Website</h1>
+  </div>
 
+  <div class="topnav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/membertable">Avihayil Members</a>
+    <a href="https://www.google.com/maps/place/Avihayil/@32.3512011,34.8614222,15z/data=!3m1!4b1!4m5!3m4!1s0x151d153030d9f14b:0x3c4e775fc978136!8m2!3d32.350708!4d34.871229">Avihayil Map</a>
+    <a href="#cen">History</a>
+    <a href="https://www.linkedin.com/in/shiry-hassan/" style="float:right">About Me</a>
+    <a href="https://github.com/shiryhass/My-Hometown-Website-Project.git" style="float:right">Source Code</a>
+    <router-outlet></router-outlet>
+
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Avihayil - My Hometown</h2>
+        <h5>Title description, Sep 16, 2018</h5>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img src="https://i.ytimg.com/vi/1cgIf19FT7U/maxresdefault.jpg" alt="Aerial photograph above Avihayil" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://dimri.co.il/uploads/projects/49.jpg" alt="Aerial photograph above Avihayil" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%A2%D7%A1%D7%A7%D7%99%D7%9D/TAO/Thalasso%20Terra%200305.jpg" style="width:85%" alt="Coastline" >
+        </div>
+      </div>
+      <div>
+        <p class="description">Avihayil (Hebrew: אֲבִיחַיִל‬, lit. Father of strength) is a village in central Israel. <br>
+          Located to the north-east of Netanya, it falls under the jurisdiction of Hefer Valley Regional Council.<br>
+          In 2017 it had a population of 1,383.</p>
+      </div>
+
+        <div class="cen" id="cen">
+          <h2>History</h2>
+          <h5>Title description, Sep 16, 2018</h5>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Israel_outline_center_ta.png
+          " alt="Map" style="width:50%"  text-align: center>
+        </div>
+
+      <p>In 1921, Jewish veterans of the British Army during World War I settled on desert land allocated to it by the British Mandate government in the northeastern Negev, near Tel Arad.<br> However, the settlement was abandoned after no water was found.<br>
+
+          As part of the Settlement of the Thousand scheme, a new village was founded in the Emek Hefer on 19 July 1932 on a stretch of sand dunes on land owned by the Jewish National Fund.<br> The founders were veterans of the Zion Mule Corps and the Jewish Legion, battalions of the British Army that had fought under the command of Lieutenant-Colonel John Henry Patterson, a vocal Zionist advocate and the "godfather of the Israeli army". Colonel Patterson visited the moshav in 1937, and in his last years expressed his desire to be buried in Israel with his men.<br>
+
+          In 1946 Avihayil merged with the neighboring moshav, Ein HaOved. The founders were immigrants from Canada, Russia and the United States, as well as several native Israelis. In 1947, Avihayil had a population of 600.[3] In 1967 there were 605 inhabitants, and its economy was based on intensive mixed farming including citrus.<br> It established "Beit HaGedudim", a museum of the Jewish Legion and clubhouse for veterans.<br>
+
+          Colonel Patterson died in California in 1947, less than a year before the establishment of the State of Israel, and was interred at Angelus-Rosedale Cemetery in Los Angeles.<br> In 2014, Patterson's ashes were brought to Israel and buried at the moshav cemetery, in the presence of Prime Minister Benjamin Netanyahu and other dignitaries.</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <img src="https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.0-9/10616722_10152500327163141_2858422607249785574_n.jpg?_nc_cat=0&oh=51f41c9bcdb388df7512bd4c4f069944&oe=5C15FF97
+        " style="width:85%" alt="Avihayil Photo" >
+        <p>Shiry Hassan is a recent graduate in Computer Sciences, eager to start an exciting career in software development. Her goal is to leverage the academic and hands-on training she received during her bachelor’s degree studies, as well as the numerous soft skills she developed during her military service. Her well-rounded background coupled with her reliability make Shiry an ideal candidate for a junior software development position or internship.
+          </p>
+      </div>
+      <div class="verticalbar"><br>
+        <h3>Useful Links</h3>
+        <a href="http://www.avichail.co.il/institutions/administration/" style="float:center">Institution Administration</a><br>
+        <a href="https://www.homee.co.il/%D7%9E%D7%95%D7%A2%D7%A6%D7%94-%D7%90%D7%96%D7%95%D7%A8%D7%99%D7%AA-%D7%A2%D7%9E%D7%A7-%D7%97%D7%A4%D7%A8/" style="float:center">Regional Council</a><br>
+        <a href="http://www.avichail.co.il/institutions/health/  " style="float:center">Avihayil Clinic</a>
+
+       </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h4> Website Builder: Shiry Hassan<br>Email: shiryhass@gmail.com</h4>
+  </div>
+  </body>
