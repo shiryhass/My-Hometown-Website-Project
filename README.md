@@ -1,5 +1,5 @@
 # MyHometownAngularProject
-This website presents my hometown. It shows some pictures, map, members details by using external API, useful links, my source code and some details about me.
+This website presents my hometown. It shows some pictures, map, members' details by using external JSON file, useful links, my source code and some details about me.
 Hope you like it!
 
 
